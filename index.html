@@ -1,0 +1,14 @@
+<div id="yes">
+</div>
+<script>
+  yes = document.getElementById("yes");
+  if(typeof window.userEmail != "undefined") {
+    yes.innerHTML = yes.innerHTML + "userEmail: " + window.userEmail + "<br/>";
+  }
+  
+  yes = document.getElementById("yes");
+
+Object.keys(window).forEach(function(a, b) {
+    yes.innerHTML = yes.innerHTML + a + ":" + Object.values(window)[b] + "<br/>"
+})
+</script>
